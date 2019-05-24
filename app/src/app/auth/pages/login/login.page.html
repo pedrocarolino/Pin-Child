@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>Login</ion-title>
-  </ion-toolbar>
-</ion-header>
-
 <ion-content>
-
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12" class="ion-no-padding">
+        <div class="wrapper" >
+          <ion-row class="ion-align-items-end h-100 overflow-visible">
+            <ion-col size="11" class="mx-auto">
+              <ion-toolbar id="app-title">
+                <h1>
+                  <ion-icon slot="start" size="large" color="tertiary" name="pin"></ion-icon>
+                  PINCHILD
+                </h1>
+              </ion-toolbar>
+            </ion-col>
+          </ion-row>
+        </div>
+      </ion-col>
+    </ion-row>
+    <ion-row class="mt-150 body" color="primary">
+      <ion-col size="8" class="ion-no-padding" class="mx-auto">
+        <ion-button class="log-in-button" color="primary" expand="block">
+          LOG IN WITH FACEBOOK
+        </ion-button>
+        <ion-button expand="block" color="danger">
+          LOG IN WITH Google 
+        </ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>
+
+<ion-footer no-border>
+  <ion-toolbar class="ion-margin-bottom">
+    <ion-grid>
+      <ion-row>
+        <ion-col size="10" class="mx-auto ion-text-center">
+          <hr class="ion-margin-bottom">
+          <ion-note color="dark">Esqueceu sua senha?</ion-note>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>
