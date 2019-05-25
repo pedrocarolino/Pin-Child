@@ -3,18 +3,19 @@
     <img src="assets/avatar.svg">
   </ion-avatar>
   <ion-label>
-    <div>
-      <h2>{{child.name}}
-          <button type="button" class="btn btn-primary" data-toggle="button"> Single toggle</button>
-          <script>
-            $(function() {
-             $('#toggle-one').bootstrapToggle();
-            })
-          </script>
-      </h2>
-    </div>
+      <ion-row class="ion-justify-content-between">
+          <ion-col size="3" class="ion-align-self-center">
+            <div>
+                <h2>{{child.name}}</h2>
+            </div>
+          </ion-col>
+          <ion-col size="3" class="ion-align-self-center">
+            <div>
+              <ion-toggle></ion-toggle>
+            </div>
+          </ion-col>
+        </ion-row>
   </ion-label>
 </ion-item>
 
 
-        

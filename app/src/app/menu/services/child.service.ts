@@ -15,7 +15,7 @@ const mockChild = [
   },
   {
     id: 2,
-    name: 'João Pereira da Silva Melo',
+    name: 'Lorena Araujo',
     birthDate: '13/12/1975',
     weight: '87',
     height: '192',
