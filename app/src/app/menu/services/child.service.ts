@@ -54,4 +54,10 @@ export class ChildService {
     });
   }
 
+  async addChild(user: Child): Promise<any> {
+    return await this._http.post(
+      `${environment.urlApi}/doctors/patients/addPatients`,user).toPromise();
+      // user, httpOptions).toPromise();
+  }
+
 }
