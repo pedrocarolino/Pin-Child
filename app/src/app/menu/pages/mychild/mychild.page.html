@@ -1,0 +1,21 @@
+<ion-header no-border>
+    <ion-toolbar class="head">
+      <ion-buttons slot="start">
+        <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+      </ion-buttons>
+        <ion-title>Minhas Pulseiras</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <app-search #searchbar [focusOnSearchbar]="focusOnSearchbar" (onSearch)="search($event)"></app-search>
+
+  <ion-content>
+    <ion-list lines="full">
+      <ion-list-header>
+        <ion-label>
+          <h3>Minhas Pulseiras</h3>
+        </ion-label>
+      </ion-list-header>
+        <app-list-childs [childs]="child"> </app-list-childs>
+    </ion-list>
+  </ion-content>
