@@ -8,6 +8,7 @@ const routes: Routes = [
   { path: 'my-child', loadChildren: './menu/pages/mychild/mychild.module#MychildPageModule' },
   { path: 'add-child', loadChildren: './menu/pages/add-child/add-child.module#AddChildPageModule' },
   { path: 'main-menu', loadChildren: './menu/pages/main-menu/main-menu.module#MainMenuPageModule' },
+  { path: 'share-child', loadChildren: './menu/pages/share-child/share-child.module#ShareChildPageModule' },
 ];
 
 @NgModule({
