@@ -1,9 +1,21 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>shareChild</ion-title>
+<ion-header no-border>
+  <ion-toolbar class="head">
+    <ion-buttons slot="start">
+      <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+    </ion-buttons>
+      <ion-title>Compartilhar Pulseiras</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<app-search #searchbar [focusOnSearchbar]="focusOnSearchbar" (onSearch)="search($event)"></app-search>
 
+<ion-content>
+  <ion-list lines="full">
+    <ion-list-header>
+      <ion-label>
+        <h3>Minhas Pulseiras</h3>
+      </ion-label>
+    </ion-list-header>
+      <app-shared-childs [childs]="child"></app-shared-childs>
+  </ion-list>
 </ion-content>
