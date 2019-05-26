@@ -1,0 +1,100 @@
+<!-- <ion-content>
+
+   
+  
+    <!-- <section id="patients" class="ion-padding">
+      <ion-item>
+        <ion-label class="font-primary"><h2>Pacientes</h2></ion-label>
+      </ion-item>
+      <ion-list lines="none" class="ion-padding-horizontal">
+        <ion-item [routerLink] = "'/doctor/my-patients'">
+          <ion-icon item-left name="contacts" class="font-primary"></ion-icon>
+          <ion-label class="font-primary ml-10">Meus Pacientes</ion-label>
+        </ion-item>
+        <ion-item [routerLink] = "'/doctor/add-patients'">
+          <ion-icon item-left name="add-circle-outline" class="font-primary"></ion-icon>
+          <ion-label class="font-primary ml-10">Adicionar Paciente</ion-label>
+        </ion-item>
+      </ion-list>
+    </section>
+  
+    <section id="doctor" class="ion-padding">
+      <ion-item>
+        <ion-label class="font-primary"><h2>Meus Dados</h2></ion-label>
+      </ion-item>
+      <ion-list lines="none" class="ion-padding-horizontal">
+        <ion-item>
+          <ion-icon item-left name="create" class="font-primary"></ion-icon>
+          <ion-label class="font-primary ml-10">Editar Dados</ion-label>
+        </ion-item>
+        <ion-item [routerLink] = "'/doctor/my-institutions'">
+          <ion-icon item-left name="business" class="font-primary"></ion-icon>
+          <ion-label class="font-primary ml-10">Locais de Trabalho</ion-label>
+        </ion-item>
+      </ion-list>
+    </section> -->
+  
+    
+  
+  <!-- </ion-content> --> 
+  
+  <ion-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col size="12" class="ion-no-padding">
+            <div class="wrapper" >
+              <section text-center no-border class="menu-header ion-padding">
+                <ion-img class="mx-auto avatar" src="assets/icon/no-picture-2.png"></ion-img>
+                <h3>Pedro Carolino</h3>
+              </section>
+            </div>
+          </ion-col>
+        </ion-row>
+        <section id="patients" class="ion-padding">
+            <ion-item>
+              <ion-label class="font-primary"><h2>Pulseiras</h2></ion-label>
+            </ion-item>
+            <ion-list lines="none" class="ion-padding-horizontal">
+              <ion-item [routerLink] = "'/doctor/my-patients'">
+                <ion-icon item-left name="contacts" class="font-primary"></ion-icon>
+                <ion-label class="font-primary ml-10">Minhas Pulseiras</ion-label>
+              </ion-item>
+              <ion-item [routerLink] = "'/doctor/add-patients'">
+                <ion-icon item-left name="add-circle-outline" class="font-primary"></ion-icon>
+                <ion-label class="font-primary ml-10">Adicionar Pulseiras</ion-label>
+              </ion-item>
+            <ion-item [routerLink] = "'/doctor/add-patients'">
+              <ion-icon item-left name="share" class="font-primary"></ion-icon>
+              <ion-label class="font-primary ml-10">Compartilhar Pulseiras</ion-label>
+            </ion-item>
+            </ion-list>
+          </section>
+        
+          <section id="doctor" class="ion-padding">
+            <ion-item>
+              <ion-label class="font-primary"><h2>Meus Dados</h2></ion-label>
+            </ion-item>
+            <ion-list lines="none" class="ion-padding-horizontal">
+              <ion-item>
+                <ion-icon item-left name="create" class="font-primary"></ion-icon>
+                <ion-label class="font-primary ml-10">Editar Dados</ion-label>
+              </ion-item>
+            </ion-list>
+          </section>
+      </ion-grid>
+    </ion-content>
+    
+    <ion-footer no-border style="height: 65px">
+      <ion-toolbar class="ion-margin-bottom">
+        <ion-grid>
+          <ion-row class="ion-padding">
+            <ion-col size="8" offset="3">
+                <ion-buttons expand="block" color="light" shape="round" (click)="logout()">
+                  <ion-icon name="power" size="small" item-left></ion-icon>
+                  <ion-text class="ml-10 logout">SAIR DO PINCHILD</ion-text>
+                </ion-buttons>
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+      </ion-toolbar>
+    </ion-footer>
