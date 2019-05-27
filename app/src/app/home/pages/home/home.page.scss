@@ -1,0 +1,19 @@
+.spinner-container {
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+ion-toolbar.head {
+    --background: rgb(226, 112, 5);
+    --color: #FFFFFF;
+    text-align: center;
+}
+
+ion-header * {
+    padding: 0;
+}
+
+.mt-32 {
+    margin-top: auto;
+}

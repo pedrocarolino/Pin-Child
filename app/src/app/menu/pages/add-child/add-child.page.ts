@@ -3,6 +3,7 @@ import { ChildService } from '../../services/child.service';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { ReactiveFormsModule } from '@angular/forms';
 import { AlertController, LoadingController } from '@ionic/angular';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-add-child',
@@ -19,7 +20,7 @@ export class AddChildPage implements OnInit {
   });
 
   constructor(private childService: ChildService, private alertCtrl: AlertController,
-    private loadingController: LoadingController) { }
+    private loadingController: LoadingController,private _location: Location) {}
 
   async presentAlert(title: string, message: string) {
     const alert = await this.alertCtrl.create({
@@ -29,6 +30,10 @@ export class AddChildPage implements OnInit {
     })
 
     alert.present();
+  }
+
+  goback() {
+    this._location.back();
   }
 
   async onSubmit() {

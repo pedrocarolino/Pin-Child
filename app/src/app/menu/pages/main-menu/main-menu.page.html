@@ -15,15 +15,15 @@
               <ion-label class="font-primary"><h2>Pulseiras</h2></ion-label>
             </ion-item>
             <ion-list lines="none" class="ion-padding-horizontal">
-              <ion-item [routerLink] = "'/doctor/my-patients'">
+              <ion-item [routerLink] = "'/home/my-child'">
                 <ion-icon item-left name="contacts" class="font-primary"></ion-icon>
                 <ion-label class="font-primary ml-10">Minhas Pulseiras</ion-label>
               </ion-item>
-              <ion-item [routerLink] = "'/doctor/add-patients'">
+              <ion-item [routerLink] = "'/home/add-child'">
                 <ion-icon item-left name="add-circle-outline" class="font-primary"></ion-icon>
                 <ion-label class="font-primary ml-10">Adicionar Pulseiras</ion-label>
               </ion-item>
-            <ion-item [routerLink] = "'/doctor/add-patients'">
+            <ion-item [routerLink] = "'/share-child'">
               <ion-icon item-left name="share" class="font-primary"></ion-icon>
               <ion-label class="font-primary ml-10">Compartilhar Pulseiras</ion-label>
             </ion-item>
@@ -49,7 +49,7 @@
         <ion-grid>
           <ion-row class="ion-padding">
             <ion-col size="8" offset="3">
-                <ion-buttons expand="block" color="light" shape="round" (click)="logout()">
+                <ion-buttons [routerLink] = "'/auth/login'" expand="block" color="light" shape="round" (click)="logout()">
                   <ion-icon name="power" size="small" item-left></ion-icon>
                   <ion-text class="ml-10 logout">SAIR DO PINCHILD</ion-text>
                 </ion-buttons>

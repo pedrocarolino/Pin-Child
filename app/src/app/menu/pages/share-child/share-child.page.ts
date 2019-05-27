@@ -3,6 +3,7 @@ import { ChildService } from '../../services/child.service';
 import { Child } from '../../models/child';
 import { ActivatedRoute } from '@angular/router';
 import { LoadingController, ToastController } from '@ionic/angular';
+import { Location } from '@angular/common';
 
 @Component({
   selector: 'app-share-child',
@@ -18,7 +19,8 @@ export class ShareChildPage implements OnInit {
   constructor(
     private childService: ChildService,
     public loadingCtrl: LoadingController,
-    public toastController: ToastController
+    public toastController: ToastController,
+    private _location: Location
     ) { }
 
   async getChild(): Promise<any> {
@@ -56,6 +58,10 @@ export class ShareChildPage implements OnInit {
     loading.dismiss();
     this.focusOnSearchbar = true;
     this.checkSearchResult(this.child);
+  }
+
+  goback() {
+    this._location.back();
   }
 
   ngOnInit() {
