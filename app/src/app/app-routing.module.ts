@@ -12,6 +12,7 @@ const routes: Routes = [
   { path: 'home/my-child', loadChildren: './menu/pages/mychild/mychild.module#MychildPageModule' },
   { path: 'home/add-child', loadChildren: './menu/pages/add-child/add-child.module#AddChildPageModule' },
   { path: 'home/main-menu', loadChildren: './menu/pages/main-menu/main-menu.module#MainMenuPageModule' },
+  { path: 'edit', loadChildren: './menu/pages/edit/edit.module#EditPageModule' },
 
 ];
 

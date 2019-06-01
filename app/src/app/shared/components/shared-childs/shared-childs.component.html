@@ -1,8 +1,8 @@
-<ion-item *ngFor="let child of childs" class="padding" [routerLink]="['/menu']" [queryParams]="{id: child.id}"> 
+<ion-item *ngFor="let child of childs" class="padding" > 
   <ion-avatar size="large" slot="start">
     <img src="assets/avatar.svg">
   </ion-avatar>
-  <ion-label (click)="shared()">
+  <ion-label (click)="getLinkWhastapp()">
       <ion-row class="ion-justify-content-between">
           <ion-col size="3" class="ion-align-self-center">
             <div>
@@ -11,11 +11,16 @@
           </ion-col>
           <ion-col size="1" class="ion-align-self-center">
             <div>
-              <ion-buttons expand="block" color="light" shape="round">
-                <ion-icon name="share" size="large" item-left ></ion-icon>
+              <ion-buttons expand="block" color="light" shape="round" slot="end">
+                <ion-icon name="ios-checkmark-circle-outline" size="large" item-left ></ion-icon>
               </ion-buttons>
             </div>
           </ion-col>
+        </ion-row>
+        <ion-row>
+            <ion-buttons expand="block" color="light" shape="round" slot="end">
+                <ion-icon name="close" size="large" item-left ></ion-icon>
+              </ion-buttons>
         </ion-row>
   </ion-label>
 </ion-item>

@@ -15,6 +15,16 @@ export class SharedChildsComponent implements OnInit {
     console.log("Compartilhando Pulseira")
   }
 
+  public getLinkWhastapp() {
+    let latitude = "-19.8700292";
+    let longitude = "-43.9632002";
+  
+    return console.log('https://api.whatsapp.com/send?latitude=' + latitude + '&longitude=' + longitude)
+  }
+
+
+  
+
   ngOnInit() {}
 
 }
