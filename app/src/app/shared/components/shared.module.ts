@@ -2,6 +2,7 @@ import { RouterModule } from '@angular/router';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ListChildsComponent } from "./list-childs/list-childs.component";
+import { SharedChildsComponent } from "../../shared/components/shared-childs/shared-childs.component";
 import { SearchComponent } from './search/search.component';
 import { IonicModule } from '@ionic/angular';
 // import { AgeByBirthdatePipe } from './pipes/age-by-birthdate/age-by-birthdate.pipe';
@@ -12,7 +13,8 @@ import { IonicModule } from '@ionic/angular';
 @NgModule({
   declarations: [
     ListChildsComponent,
-    SearchComponent
+    SearchComponent,
+    SharedChildsComponent
   ],
   imports: [
     CommonModule,
@@ -21,7 +23,8 @@ import { IonicModule } from '@ionic/angular';
   ],
   exports: [
     ListChildsComponent,
-    SearchComponent
+    SearchComponent,
+    SharedChildsComponent
   ]
 })
 export class SharedModule { }

@@ -1,7 +1,10 @@
 <ion-header no-border>
     <ion-toolbar class="head">
       <ion-buttons slot="start">
-        <ion-icon name="arrow-back" color="light" size="large"></ion-icon>
+        <ion-icon (click)="goback()" name="arrow-back" color="light" size="large"></ion-icon>
+      </ion-buttons>
+      <ion-buttons slot="end">
+        <ion-icon [routerLink]="'/home'" name="home" color="light" size="large"></ion-icon>
       </ion-buttons>
         <ion-title>Adiciona Pulseiras</ion-title>
     </ion-toolbar>
@@ -24,7 +27,7 @@
           <ion-row>
               <ion-col size="12">
                 <ion-item>
-                  <ion-label position="floating">Apelido</ion-label>
+                  <ion-label position="floating"> </ion-label>
                   <ion-input id="nickname" type="text" placeholder="Apelido"></ion-input>
                 </ion-item>
               </ion-col>
@@ -33,7 +36,7 @@
           <ion-row>
             <ion-col size="12">
               <ion-item>
-                <ion-label position="floating">Data de Aniversario</ion-label>
+                <ion-label position="floating">Data de Nascimento</ion-label>
                    <ion-datetime displayFormat="DD/MM/YYYY"></ion-datetime>
               </ion-item>
             </ion-col>
@@ -50,12 +53,11 @@
 
           <ion-row class="mt-150" color="primary">
               <ion-col size="10" class="ion-padding-top" class="mx-auto">
-                <ion-button class="log-in-button" color="tertiary" expand="block" style="height: 60px">
+                <ion-button (click)="presentAlert()" [routerLink]="'/my-child'" class="log-in-button" color="tertiary" expand="block" style="height: 60px">
                   <h4>CADASTRAR</h4>
                 </ion-button>
               </ion-col>
           </ion-row>
-
           
         </form>
       </ion-grid>

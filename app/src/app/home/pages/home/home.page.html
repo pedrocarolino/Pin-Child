@@ -1,9 +1,28 @@
 <ion-header>
-  <ion-toolbar>
-    <ion-title>home</ion-title>
-  </ion-toolbar>
+    <ion-toolbar class="head" style="width: unset">
+        <ion-title>Home</ion-title>
+    </ion-toolbar>
 </ion-header>
 
-<ion-content>
-
+<ion-content padding>
+  <div>
+    <iframe zoom="true" scroll="true" class = "style" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d7504.577339077183!2d-43.9632!3d-19.870029!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x43a5f491fad68b3d!2sEscola+de+Engenharia+da+UFMG!5e0!3m2!1spt-BR!2sbr!4v1559408519085!5m2!1spt-BR!2sbr" frameborder="0" style="border:0" allowfullscreen></iframe>   
+  </div>
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+      <ion-tab-button tab="add-child">
+        <ion-icon name="person-add"></ion-icon>
+          <ion-label>Add Pulseiras</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="my-child">
+        <ion-icon name="people"></ion-icon>
+          <ion-label>Minhas Pulseiras</ion-label>
+      </ion-tab-button>
+      <ion-tab-button tab="main-menu">
+        <ion-icon name="menu"></ion-icon>
+            <ion-label>Menu</ion-label>
+      </ion-tab-button>
+    </ion-tab-bar>
+  </ion-tabs>
 </ion-content>
+

@@ -1,17 +1,18 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 import { Routes, RouterModule } from '@angular/router';
 
 import { IonicModule } from '@ionic/angular';
 
-import { ShareChildPage } from './share-child.page';
+import { EditPage } from './edit.page';
 import { SharedModule } from "../../../shared/components/shared.module";
 
 const routes: Routes = [
   {
     path: '',
-    component: ShareChildPage
+    component: EditPage
   }
 ];
 
@@ -21,8 +22,9 @@ const routes: Routes = [
     FormsModule,
     IonicModule,
     RouterModule.forChild(routes),
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule
   ],
-  declarations: [ShareChildPage]
+  declarations: [EditPage]
 })
-export class ShareChildPageModule {}
+export class EditPageModule {}

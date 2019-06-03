@@ -6,16 +6,18 @@ import { AlertController, LoadingController } from '@ionic/angular';
 import { Location } from '@angular/common';
 
 @Component({
-  selector: 'app-add-child',
-  templateUrl: './add-child.page.html',
-  styleUrls: ['./add-child.page.scss'],
+  selector: 'app-edit',
+  templateUrl: './edit.page.html',
+  styleUrls: ['./edit.page.scss'],
 })
-export class AddChildPage implements OnInit {
+export class EditPage implements OnInit {
 
   public addChildForm = new FormGroup({
     name: new FormControl('', Validators.required),
     nickname: new FormControl('', Validators.required),
     birthDate: new FormControl('', Validators.required),
+    email: new FormControl('', Validators.required),
+    cpf: new FormControl('', Validators.required),
     code: new FormControl('', Validators.required)
   });
 
@@ -25,7 +27,7 @@ export class AddChildPage implements OnInit {
   async presentAlert(title: string, message: string) {
     const alert = await this.alertCtrl.create({
       header: title,
-      message: "Pulseira cadastrada com sucesso.",
+      message: "Dados editados com sucesso.",
       buttons: ['Ok!']
     })
 
