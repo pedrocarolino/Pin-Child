@@ -13,6 +13,7 @@ const routes: Routes = [
   { path: 'home/add-child', loadChildren: './menu/pages/add-child/add-child.module#AddChildPageModule' },
   { path: 'home/main-menu', loadChildren: './menu/pages/main-menu/main-menu.module#MainMenuPageModule' },
   { path: 'edit', loadChildren: './menu/pages/edit/edit.module#EditPageModule' },
+  { path: 'signin', loadChildren: './auth/pages/signin/signin.module#SigninPageModule' },
 
 ];
 
